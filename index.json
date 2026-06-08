@@ -1,0 +1,13 @@
+const mineflayer = require('mineflayer')
+
+const bot = mineflayer.createBot({
+  host: 'YOUR_SERVER_IP',
+  port: 25565,
+  username: 'CutieBot'
+})
+
+bot.on('spawn', () => {
+  setTimeout(() => {
+    bot.chat('/register aash4545 aash4545')
+  }, 3000)
+})
